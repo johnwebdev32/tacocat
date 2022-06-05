@@ -8,7 +8,7 @@ function getValue(){
 
     let returnObj = checkForPalindrome(userString);
 
-    displayString(revString);
+    displayMessage(returnObj);
 }
 
 //Check if the string is a palindrome
@@ -44,7 +44,7 @@ function checkForPalindrome(userString){
 
 function displayMessage(returnObj)
 {
-    document.getElementById("alertHeader").innerHTML = returnOjb.msg;
-    document.getElementById("msg").innerHTML = `Your phrase reversed is:" ${returnObj.reversed} `;
+    document.getElementById("alertHeader").innerHTML = returnObj.msg;
+    document.getElementById("msg").innerHTML = `Your phrase reversed is:  ${returnObj.reversed} `;
     document.getElementById("alert").classList.remove("invisible");
 }
